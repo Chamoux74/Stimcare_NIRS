@@ -20,28 +20,7 @@ ggplot(test4, aes(x = instant_mesure, y = slope )) +
     size = 1,
     position = "identity"
   ) +
-  scale_color_manual( 
-    values = c(
-      "#00AFBB" ,
-                "#FC4E07" ,
-                "purple" ,
-                "#0416f5" ,
-                "#b00000" ,
-                "#19a3e8" ,
-                "#fd4c4c" ,
-                "#E7B800" ,
-                "#5ef11a" , 
-                "#c58ede" ,
-                "#3e020b" ,
-                "#febd02" ,
-                "#16161e" , 
-                "#24844b" ,
-                "#f604fd" ,
-                "#439bab" ,
-                "#c5c896" ,
-                "#6e711d"
-    )) +
-  labs(color = "sujet") +
+ +
   stat_summary(
     geom = "errorbar" ,
     fun.data = mean_sd ,
